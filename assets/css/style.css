@@ -421,9 +421,14 @@ section {
 }
 
 @media (max-width: 575px) {
+  #hero {
+    width: 100%;
+    height: 100%;
+    margin: 15% auto auto;
+  }
+
   #hero .hero-img img {
-    width: 80%;
-    margin: 12% auto auto;
+    width: 95%;
   }
 
   #hero h1 {
@@ -541,6 +546,13 @@ section {
 
 .profile .ceo-explanation p {
   text-align: justify;
+}
+
+@media (max-width: 575px) {
+  #profile-page {
+    margin: 15% auto auto;
+    width: 100%;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -892,16 +904,12 @@ section {
 --------------------------------------------------------------*/
 .payment .google-calender {
   text-align: center;
+  margin: 0 0 5%;
 }
 
 .payment .flutterwave-container {
   text-align: center;
   margin: 5% auto auto;
-}
-
-.payment .flutterwave-container p {
-  font-size: 1.2rem;
-  font-weight: 600;
 }
 
 #start-payment-button {
@@ -917,4 +925,27 @@ section {
   border: none;
   transition: all .1s ease-in;
   vertical-align: middle;
+}
+
+
+@media (max-width: 575px) {
+  .payment .google-calender {
+    text-align: center;
+    margin: 0 0 15%;
+  }
+
+  .payment .flutterwave-container {
+    margin: 10% 0;
+  }
+
+  #start-payment-button {
+    max-width: 100%;
+  }
+}
+
+/*---------------------------------------------------
+ thank you section
+  ------------------------------------------ */
+.thankyou img {
+  width: 100%;
 }

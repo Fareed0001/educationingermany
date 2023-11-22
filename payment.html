@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>STUDY IN GERMANY</title>
+    <title>MY GERMAN STUDY</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -50,7 +50,7 @@
 
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a class="nav-link scrollto active" href="index.html#hero">Home</a></li>
+                    <li><a class="nav-link scrollto" href="index.html#hero">Home</a></li>
                     <li><a class="nav-link scrollto" href="profile.html">Profile</a></li>
                     <li><a class="nav-link scrollto" href="about.html">About</a></li>
                     <li><a class="nav-link scrollto" href="#programs">Programs</a></li>
@@ -70,11 +70,14 @@
             <div class="container" data-aos="fade-up">
                 <header class="section-header">
                     <h2>Book an appointment - Payment</h2>
-                    <p>Book a virtual meeting appointment with us to get full insight and help with the <strong>German
-                            Study Visa</strong> application</p>
                 </header>
             </div>
-            <div class="container google-calender">
+
+            <div class="container google-calender" data-aos="fade-up">
+
+                <p>Book a virtual meeting appointment with us to get full insight and help with the <strong>German
+                        Study Visa</strong> application</p>
+                        <br>
                 <!-- Google Calendar Appointment Scheduling begin -->
                 <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
                 <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
@@ -95,29 +98,8 @@
             </div>
 
             <!-- flutterwave -->
-            <div class="container flutterwave-container">
-                <p>After scheduling a meeting, you will be charged ₦50,000 for the meeting.</p>
-                <form method="POST" action="https://checkout.flutterwave.com/v3/hosted/pay">
-                    <input type="hidden" name="customer[email]" value="faridibrahim0003@gmail.com" />
-                    <input type="hidden" name="customer[name]" value="Farid Ibrahim" />
-                    <input type="hidden" name="tx_ref" value="txref-81123" />
-                    <input type="hidden" name="amount" value="500" />
-                    <input type="hidden" name="currency" value="NGN" />
-                    <input type="hidden" name="meta[source]" value="docs-html-test" />
-                    <br>
-                    <button type="submit" id="start-payment-button">Pay Now</button>
-                </form>
-            </div>
-
-
-
-
-
-
-
-
-
-
+           
+            <!-- end flutterwave -->
 
         </section>
 
