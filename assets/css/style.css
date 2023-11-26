@@ -455,12 +455,40 @@ section {
   }
 }
 
+
+/*--------------------------------------------------------------
+# Advert
+--------------------------------------------------------------*/
+#advert {
+  background-color: #f0ffff;
+  text-align: center;
+}
+
+#advert iframe {
+  width: 80%;
+  height: 280px;
+}
+
+#advert .accordion {
+  width: 80%;
+  margin: auto;
+  text-align: justify;
+}
+
+#advert .accordion span {
+ font-size: .6rem;
+ font-weight: 400;
+ float: right;
+ display: block;
+ line-height: 2rem;
+ color: var(--color-primary);
+}
+
 /*--------------------------------------------------------------
 # Profile
 --------------------------------------------------------------*/
 #profile-page {
   margin: 5% auto auto;
-  width: 80%;
 }
 
 .profile .member {
@@ -879,6 +907,19 @@ section {
   text-align: justify;
 }
 
+.embassy {
+  text-align: center;
+  margin: 5% auto auto;
+}
+
+.embassy span {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.embassy p {
+  font-weight: 600;
+}
 
 /*--------------------------------------------------------------
 # About Section
@@ -909,7 +950,7 @@ section {
 
 .payment .flutterwave-container {
   text-align: center;
-  margin: 5% auto auto;
+  margin: auto;
 }
 
 #start-payment-button {
@@ -927,6 +968,11 @@ section {
   vertical-align: middle;
 }
 
+.payment .bank-payment {
+  text-align: center;
+  margin: 5% auto auto;
+}
+
 
 @media (max-width: 575px) {
   .payment .google-calender {
@@ -935,12 +981,17 @@ section {
   }
 
   .payment .flutterwave-container {
-    margin: 10% 0;
+    margin: 5% 0;
   }
 
   #start-payment-button {
     max-width: 100%;
   }
+
+  .payment .bank-payment {
+    margin: 15% auto auto;
+  }
+  
 }
 
 /*---------------------------------------------------
