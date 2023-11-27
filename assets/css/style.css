@@ -933,13 +933,6 @@ section {
   text-align: justify;
 }
 
-
-
-
-
-
-
-
 /*--------------------------------------------------------------
 # Payment
 --------------------------------------------------------------*/
@@ -985,7 +978,8 @@ section {
 }
 
 .appointment {
-  margin: auto;
+text-align: center;
+margin: auto;
 }
 
 @media (max-width: 575px) {
