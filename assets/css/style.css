@@ -973,6 +973,20 @@ section {
   margin: 5% auto auto;
 }
 
+.payment .mb-3 {
+  text-align: left;
+  width: 40%;
+  margin: auto;
+  font-weight: 600;
+}
+
+.payment .form-div label {
+  font-weight: 600;
+}
+
+.appointment {
+  margin: auto;
+}
 
 @media (max-width: 575px) {
   .payment .google-calender {
