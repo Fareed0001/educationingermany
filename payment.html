@@ -47,9 +47,10 @@
             <nav id="navbar" class="navbar">
                 <ul>
                     <li><a class="nav-link scrollto" href="index.html#hero">Home</a></li>
-                    <li><a class="nav-link scrollto" href="profile.html">Profile</a></li>
                     <li><a class="nav-link scrollto" href="about.html">About</a></li>
+                    <li><a class="nav-link scrollto" href="universities.html">Universities</a></li>
                     <li><a class="nav-link scrollto" href="#programs">Programs</a></li>
+                    <li><a class="nav-link scrollto" href="scholarships.html">Scholarships</a></li>
                     <li><a class="nav-link scrollto" href="visa.html">Visa</a></li>
                     <li><a class="nav-link scrollto " href="index.html#contact">Contact</a></li>
                     <li><a class="getstarted scrollto" href="#">Book Appointment / Payment</a></li>
@@ -76,7 +77,7 @@
             <div class="container flutterwave-container" id="payment-form" data-aos="fade-up">
                 <h2>40 minutes consultation fee is ₦50,000</h2>
                 <form method="POST" action="https://checkout.flutterwave.com/v3/hosted/pay">
-                    
+                    <input type="hidden" name="public_key" value="FLWPUBK-1e71cd2783d45bf8b9ab5d83c8473f64-X" />
                     <div class="mb-3">
                         <label class="form-label" for="name">Username</label>
                         <input class="form-control" type="text" name="customer[name]" value="" id="name"
@@ -132,7 +133,7 @@
                             <h4>Useful Links</h4>
                             <ul>
                                 <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
-                                <li><i class="bx bx-chevron-right"></i> <a href="profile.html">Profile</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="universities.html">Universities</a></li>
                                 <li><i class="bx bx-chevron-right"></i> <a href="about.html">About</a></li>
                                 <li><i class="bx bx-chevron-right"></i> <a href="programs.html">Programs</a></li>
                             </ul>
@@ -143,6 +144,7 @@
                             <ul>
                                 <li><i class="bx bx-chevron-right"></i> <a href="#visa">Visa</a></li>
                                 <li><i class="bx bx-chevron-right"></i> <a href="index.html#contact">Contact</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="scholarships.html">Scholarship</a></li>
                                 <li><i class="bx bx-chevron-right"></i> <a href="#">Payment</a></li>
                             </ul>
                         </div>

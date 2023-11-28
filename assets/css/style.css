@@ -432,12 +432,17 @@ section {
   }
 
   #hero h1 {
-    margin: auto auto 5% 2.5%;
+    margin: auto auto 5%;
+    text-align: center;
   }
 
   #hero p {
     width: 95%;
     margin: auto auto 30px;
+  }
+
+  #hero .hero-btn {
+    text-align: center;
   }
 
   #hero .btn-get-started {
@@ -476,104 +481,83 @@ section {
 }
 
 #advert .accordion span {
- font-size: .6rem;
- font-weight: 400;
- float: right;
- display: block;
- line-height: 2rem;
- color: var(--color-primary);
+  font-size: .6rem;
+  font-weight: 400;
+  float: right;
+  display: block;
+  line-height: 2rem;
+  color: var(--color-primary);
+}
+
+@media (max-width: 575px) {
+  #advert iframe {
+    width: 95%;
+  }
+
+  #advert .accordion {
+    width: 95%
+  }
 }
 
 /*--------------------------------------------------------------
-# Profile
+# Universities section
 --------------------------------------------------------------*/
 #profile-page {
   margin: 5% auto auto;
 }
 
-.profile .member {
-  margin-bottom: 20px;
-  overflow: hidden;
-  text-align: center;
-  border-radius: 5px;
-  background: #fff;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+.universities .container img {
+  width: 90%;
+  height: 100%;
+}
+
+.container .free-tuition {
+  text-align: justify;
+  margin: auto auto 5%;
   width: 90%;
 }
 
-.profile .member .member-img {
-  position: relative;
-  overflow: hidden;
+.gapnet {
+  margin: 5% auto auto;
+  text-align: center;
 }
 
-.profile .member .social {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  height: 40px;
-  opacity: 0;
-  transition: ease-in-out 0.3s;
-  background: rgba(255, 255, 255, 0.85);
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
+@media (max-width: 575px) {
+  .universities .free-tuition {
+    width: 95%;
+    margin: auto auto 10%;
+  }
+
+  .universities .container img {
+    width: 95%;
+    margin: auto 2.5% 5%;
+    height: 95%;
+  }
 }
 
-.profile .member .social a {
-  transition: color 0.3s;
-  color: #222222;
-  margin: 0 10px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
+/*--------------------------------------------------------------
+# Scholarship section
+--------------------------------------------------------------*/
+.scholarship h4 {
+  text-align: center;
+  margin: 5% auto 2%;
 }
 
-.profile .member .social a i {
-  line-height: 0;
-}
-
-.profile .member .social a:hover {
-  color: #3498db;
-}
-
-.profile .member .social i {
-  font-size: 18px;
-  margin: 0 2px;
-}
-
-.profile .member .member-info {
-  padding: 25px 15px;
-}
-
-.profile .member .member-info h4 {
-  font-weight: 700;
-  margin-bottom: 5px;
-  font-size: 18px;
-  color: #222222;
-}
-
-.profile .member .member-info span {
-  display: block;
-  font-size: 13px;
-  font-weight: 400;
-  color: #aaaaaa;
-}
-
-.profile .member .member-info p {
-  font-style: italic;
-  font-size: 14px;
-  line-height: 26px;
-  color: #777777;
-}
-
-.profile .member:hover .social {
-  opacity: 1;
-}
-
-
-.profile .ceo-explanation p {
+.scholarship p {
   text-align: justify;
+}
+
+.scholarship .img-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.scholarship .img-container ol li {
+  margin: 3% auto;
+}
+
+.accordion-container {
+  margin: 8% auto auto;
 }
 
 @media (max-width: 575px) {
@@ -581,6 +565,29 @@ section {
     margin: 15% auto auto;
     width: 100%;
   }
+
+  .scholarship h4 {
+    width: 95%;
+    text-align: center;
+    margin: 5% auto;
+  }
+
+  .scholarship p {
+    width: 95%;
+    margin: auto;
+    text-align: justify;
+  }
+
+  .scholarship .img-container {
+    margin: 5% auto;
+  }
+
+  .scholarship .img-container img {
+    width: 95%;
+    height: 95%;
+    margin: 5% 2.5%;
+  }
+
 }
 
 /*--------------------------------------------------------------
@@ -870,6 +877,21 @@ section {
 /*--------------------------------------------------------------
 # F.A.Q
 --------------------------------------------------------------*/
+.faq .row {
+  margin: auto auto 5%;
+}
+
+.faq .row img {
+  width: 100%;
+  height: 100%;
+}
+
+.faq .row p {
+  text-align: justify;
+  line-height: 2rem;
+  margin: 5% auto auto;
+}
+
 .faq .accordion-collapse {
   border: 0;
 }
@@ -933,6 +955,35 @@ section {
   text-align: justify;
 }
 
+.about .row {
+  margin: auto auto 5%;
+}
+
+.about .row img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 575px) {
+  .about .row {
+    padding: 0;
+  }
+
+  .about .about-container p {
+    width: 100%;
+    margin: 5% auto;
+  }
+
+  .about .why-germany h4 {
+    text-align: center;
+  }
+
+  .about .why-germany p {
+    width: 95%;
+    margin: 5% auto;
+  }
+}
+
 /*--------------------------------------------------------------
 # Payment
 --------------------------------------------------------------*/
@@ -978,8 +1029,8 @@ section {
 }
 
 .appointment {
-text-align: center;
-margin: auto;
+  text-align: center;
+  margin: auto;
 }
 
 @media (max-width: 575px) {
@@ -999,7 +1050,10 @@ margin: auto;
   .payment .bank-payment {
     margin: 15% auto auto;
   }
-  
+
+  .payment .mb-3 {
+    width: 80%;
+  }
 }
 
 /*---------------------------------------------------
