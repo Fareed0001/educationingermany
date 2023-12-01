@@ -367,6 +367,7 @@ section {
 }
 
 #hero .hero-img img {
+  margin: 15% auto auto;
   width: 100%;
   border-radius: 12px;
   -webkit-border-radius: 12px;
@@ -462,10 +463,65 @@ section {
 
 
 /*--------------------------------------------------------------
+# Reason container section
+--------------------------------------------------------------*/
+.reason-container .container img {
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+.reason-text {
+  padding: 5%;
+  text-align: justify;
+}
+
+.reason-text p {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.reason-text li {
+  line-height: 1.8rem;
+}
+
+.reason-container img {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+  -webkit-animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(5px);
+    -webkit-transform: translateY(5px);
+    -moz-transform: translateY(5px);
+    -ms-transform: translateY(5px);
+    -o-transform: translateY(5px);
+}
+
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+
+@media (max-width: 575px) {
+  .reason-container .container img {
+    width: 95%;
+    margin: auto 2.5%;
+  }
+}
+
+
+
+
+/*--------------------------------------------------------------
 # Advert
 --------------------------------------------------------------*/
 #advert {
-  background-color: #f0ffff;
+  background-color: #f7ffff;
   text-align: center;
 }
 
@@ -499,6 +555,14 @@ section {
   }
 }
 
+
+/*--------------------------------------------------------------
+# Image link
+--------------------------------------------------------------*/
+.image-link .card:hover {
+ color: var(--color-secondary-hover);
+}
+
 /*--------------------------------------------------------------
 # Universities section
 --------------------------------------------------------------*/
@@ -511,10 +575,35 @@ section {
   height: 100%;
 }
 
-.container .free-tuition {
+.container .free-tuition, .universities .university-list {
   text-align: justify;
   margin: auto auto 5%;
   width: 90%;
+}
+
+.container .free-tuition img {
+  height: 85%;
+  margin: 5% auto auto;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+.university-list img{
+  margin: auto;
+  border-radius: 12px;
+  width: 100%;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+.uni-seo {
+  margin: 5% auto auto;
+  text-align: justify;
 }
 
 .gapnet {
@@ -523,16 +612,20 @@ section {
 }
 
 @media (max-width: 575px) {
-  .universities .free-tuition {
-    width: 95%;
-    margin: auto auto 10%;
+  .container .free-tuition, .universities .university-list {
+    width: 100%;
   }
-
-  .universities .container img {
+  
+  .universities .container img, .universities .university-list img {
     width: 95%;
     margin: auto 2.5% 5%;
     height: 95%;
   }
+
+.uni-seo {
+  width: 95%;
+  margin: auto;
+}
 }
 
 /*--------------------------------------------------------------
@@ -568,7 +661,7 @@ section {
 
   .scholarship h4 {
     width: 95%;
-    text-align: center;
+    text-align:justify;
     margin: 5% auto;
   }
 
@@ -585,8 +678,13 @@ section {
   .scholarship .img-container img {
     width: 95%;
     height: 95%;
-    margin: 5% 2.5%;
-  }
+    border-radius: 12px;
+    margin: auto 2.5% 5%;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
 
 }
 
@@ -943,6 +1041,49 @@ section {
   font-weight: 600;
 }
 
+.embassy-seo {
+  text-align: justify;
+  margin: auto auto 3%;
+}
+
+.program-img {
+  width: 80%;
+  margin: auto 10%;
+}
+
+.program-text {
+  text-align: justify;
+  margin: 3% auto;
+}
+
+
+@media (max-width: 575px) {
+
+  .program-img {
+    width: 100%;
+    margin: auto auto 5%;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+  
+  .program-text {
+    width: 95% auto;
+  }
+
+  .embassy-seo {
+    width: 95%;
+    margin: auto auto 3%;
+  }
+  
+  .embassy p {
+    font-weight: 500;
+  }
+
+}
+
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
@@ -962,6 +1103,24 @@ section {
 .about .row img {
   width: 100%;
   height: 100%;
+}
+
+.about-container img {
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+.about .why-germany img {
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  height: 90%;
+  margin: 5% auto;
 }
 
 @media (max-width: 575px) {
